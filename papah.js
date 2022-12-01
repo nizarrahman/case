@@ -51,7 +51,7 @@ const hariiini = moment.tz('Asia/Jakarta').format('DD MMMM YYYY')
 const barat = moment.tz('Asia/Jakarta').format('HH:mm:ss')
 const tengah = moment.tz('Asia/Makassar').format('HH:mm:ss')
 const timur = moment.tz('Asia/Jayapura').format('HH:mm:ss')
-const nyoutube = ('© Papah\nYoutube :\nhttps://bit.ly/Papah-Chan')  //ubah di config biar ngk emror
+const nyoutube = ('© Nizar\nWebsite :\nnizarrrahman.biz.id')  //ubah di config biar ngk emror
 const ini_mark = `0@s.whatsapp.net`
 const ownernya = ownernomer + '@s.whatsapp.net'
 global.prem = require("./lib/premium")
@@ -1113,7 +1113,7 @@ break
             case 'setowner': {
                if (!isCreator) throw mess.owner
                if (m.text.includes('@')) return m.reply(`*Invalid!*\n\n*Pake Nomer Woy*\n*Jangan Pakai Tag!*`)
-               if (!text) throw `Example : ${prefix + command} 6282287219167`
+               if (!text) throw `Example : ${prefix + command} 6281386945391`
               global.owner = text
               global.ownernomer = text
               m.reply(`Owner berhasil diubah menjadi\n\n⭔ Owner : ${global.owner}\n⭔ OwnerNumber : ${global.ownernomer}`)
@@ -2644,7 +2644,7 @@ case'dogestick':{
 var ano = await fetchJson('https://raw.githubusercontent.com/rashidsiregar28/data/main/anjing')
 var wifegerak = ano.split('\n')
 var wifegerakx = wifegerak[Math.floor(Math.random() * wifegerak.length)]
-encmedia = await papah.sendImageAsSticker(m.chat, wifegerakx, m, { packname: "Made By", author: "Papah-Chan", })
+encmedia = await papah.sendImageAsSticker(m.chat, wifegerakx, m, { packname: "Made By", author: "NAI-DEV", })
 await fs.unlinkSync(encmedia)
 }
 break
@@ -2653,7 +2653,7 @@ case'bucinp' :{
 var ano = await fetchJson('https://raw.githubusercontent.com/rashidsiregar28/data/main/bucin')
 var wifegerak = ano.split('\n')
 var wifegerakx = wifegerak[Math.floor(Math.random() * wifegerak.length)]
-encmedia = await papah.sendImageAsSticker(m.chat, wifegerakx, m, { packname: "Made By", author: "Papah-Chan", })
+encmedia = await papah.sendImageAsSticker(m.chat, wifegerakx, m, { packname: "Made By", author: "NAI-DEV", })
 await fs.unlinkSync(encmedia)
 }
 break
@@ -4148,7 +4148,7 @@ let alfamart = `628111500959@s.whatsapp.net`
 	           title: ' ∫ » SUPPORT ME –––––––·│⭔',
 	           rows: [
 	            {title: "🎟 │⭔ Donasi", rowId: `donasi`, description: `╰ ► 💰 Donasi ♕︎`},
-                {title: "🔴 │⭔ Subscribe", rowId: `subsyt`, description: `╰ ► 📢 Thanks For Subscribe ♕︎`},
+                {title: "🔴 │⭔ Subscribe", rowId: `subsyt`, description: `╰ ► 📢 Thanks For Follow ♕︎`},
                 {title: "📚 │⭔ Github", rowId: `sc`, description: `╰ ► 🎷 Follow My Github ♕︎`}
 	]
   },
@@ -4596,7 +4596,7 @@ _⫹⫺ Bot Name : Sad-Bot_
 _⫹⫺ Library : Baileys-Md_
 _⫹⫺ Version : 4.0.4_
 _⫹⫺ Language : Javascript_
-_⫹⫺ Recoder : 𝙋𝙖𝙥𝙖𝙝-𝘾𝙝𝙖𝙣_
+_⫹⫺ Author : Nizar Rahman_
 _⫹⫺ Date Server :  ${moment.tz('Asia/Jakarta').format('DD/MM/YY')}_
 _⫹⫺ Time Sever : ${moment.tz('Asia/Jakarta').format('HH:mm:ss')}_                
 _⫹⫺ Bot Mode : Public Mode_
@@ -5019,18 +5019,11 @@ _⫹⫺ Fitur : 200_
 ╰────❍
 
 -- *C R E D I T S* --
-Tuhan Yang Maha Esa
-DikaArdnt As Developer
-NazeDev As Owner Base
-Papah As Recode
-KyuraSaja
-Nurutomo
-Contributors in GitHub
-RestAPI
-BochilGaming
-Mayumi Kun
-Iqbal
-Eren
+ALLAH SWT
+Nai Dev As Developer
+Nizar (auhor)
+Adryan (team)
+irham (team)
 User Sad Bot`
                 let buttons = [{ buttonId: 'donasi', buttonText: { displayText: '🙏Donasi' }, type: 1 },{ buttonId: 'rules', buttonText: { displayText: '❗Rules' }, type: 1 }]
             papah.sendMessage(m.chat, { caption: `${anu}`, location: { jpegThumbnail: await reSize(faall, 300, 200)}, buttons: buttons, footer: nyoutube, mentions: ments})
